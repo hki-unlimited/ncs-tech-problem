@@ -11,10 +11,16 @@ yarn install
 
 ## Starting the app
 
-In the project directory, you can run:
-
 yarn start
 
 OR
 
 npm start
+
+## Running tests
+
+yarn test
+
+OR
+
+npm test
