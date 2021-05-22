@@ -1,6 +1,7 @@
 import PowerToLinkStationResult from "../models/PowerToLinkStationResult";
 
 /**
+ * A function for finding the best power results. Returns the result with most power to link station.
  */
 export default function findBestPowerResult(
   results: PowerToLinkStationResult[]
