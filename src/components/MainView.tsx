@@ -5,6 +5,8 @@ import PowerToLinkStationResult from "../models/PowerToLinkStationResult";
 import linkStations from "../sampleData/linkStations";
 import points from "../sampleData/points";
 import powerToLinkStationResult from "../utils/bestLinkForStation";
+import BestLinkResult from "./BestLinkResult";
+import NoStationWithinReach from "./NoStationWithinReach";
 
 const MainView: React.FC = () => {
   const [bestLinkResults, setBestLinkResults] = useState<
@@ -34,15 +36,12 @@ const MainView: React.FC = () => {
         (result: PowerToLinkStationResult, index: number) => {
           if (result.powerToLinkStation === 0) {
             return (
-              <div>
-                {`No link station within reach for point ${result.pointX}, ${result.pointY}`}
-
-              </div>
+              <NoStationWithinReach result={result}/>
             );
           }
           return (
             <div key={index}>
-              {`Best link station for point ${result.pointX}, ${result.pointY} is ${result.stationX}, ${result.stationY} with power ${result.powerToLinkStation.toFixed(2)}`}
+             <BestLinkResult result={result}/>
             </div>
           );
         }
