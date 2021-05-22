@@ -7,9 +7,9 @@ npm install
 
 OR
 
-npm install
+yarn install
 
-## Available Scripts
+## Starting the app
 
 In the project directory, you can run:
 
