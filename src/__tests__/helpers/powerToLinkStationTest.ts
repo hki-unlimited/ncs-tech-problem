@@ -1,10 +1,5 @@
 import powerToLinkStation from "../../utils/powerToLinkStation";
 
-// test("Power is 0 when out of reach", () => {
-//     expect(true).toBe(true);
-// });
-
-
 test("Power is 0 when out of reach", () => {
     let powerStationReach: number = 2;
     let distanceToPowerStation: number = 3;
@@ -23,7 +18,6 @@ test("Power to link station is calculated correctly", () => {
     power = powerToLinkStation(powerStationReach, distanceToPowerStation);
     expect(power).toBe(4);
 
-    
     powerStationReach = 4;
     distanceToPowerStation = 1;
     power = powerToLinkStation(powerStationReach, distanceToPowerStation);

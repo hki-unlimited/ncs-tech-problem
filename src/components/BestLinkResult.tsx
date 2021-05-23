@@ -6,7 +6,7 @@ interface Props {
 }
 
 /** 
- * A component shows info for the best link station, as calculated from power at a given coordinates.  
+ * A component that shows info for the best link station, as calculated from power at a given coordinates.  
  * This component is only shown when a device with given coordinates has a station within reach
 */
 const BestLinkResult: React.FC<Props> = ({ result }) => {

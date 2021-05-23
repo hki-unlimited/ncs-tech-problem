@@ -9,7 +9,7 @@ import powerToLinkStationResult from "../utils/powerToLinkStationResult";
 import BestLinkResult from "./BestLinkResult";
 import NoStationWithinReach from "./NoStationWithinReach";
 
-const MainView: React.FC = () => {
+const SampleSolution: React.FC = () => {
   const [bestPowerResults, setBestPowerResults] = useState<
     PowerToLinkStationResult[]
   >([]);
@@ -55,4 +55,4 @@ const MainView: React.FC = () => {
   );
 };
 
-export default MainView;
+export default SampleSolution;
